@@ -1,0 +1,24 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  line-height: 1;
+  scroll-behavior: smooth;
+  appearance: none;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  /* height: 100vh; */
+  /* width: 100vw; */
+  background: var(--cor-roxo-900);
+}
+
+section {
+  min-height: 100vh;
+}

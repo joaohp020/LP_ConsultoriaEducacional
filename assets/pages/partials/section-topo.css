@@ -1,0 +1,45 @@
+.topo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.topo h1 {
+  color: var(--cor-branco);
+  margin: -130px 0 3rem 0;
+}
+.beneficios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 12rem 0; */
+}
+.preco, .flexibilidade, .certificado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 20rem;
+  height: 10rem;
+  box-shadow: 0 0 0.8rem var(--cor-amarela);
+  border-radius: 15px;
+  padding: 20px 20px;
+  margin: 10px 20px;
+}
+.preco p,
+.certificado p,
+.flexibilidade p {
+  font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+  .topo h1 {
+    font-size: 1.3rem;
+    padding: 8px 15px;
+    overflow: hidden;
+  }
+}

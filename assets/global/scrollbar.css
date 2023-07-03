@@ -1,0 +1,7 @@
+::-webkit-scrollbar {
+    background-color: var(--cor-roxo-900);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--cor-roxo-400);
+}
