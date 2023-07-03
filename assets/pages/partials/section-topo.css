@@ -9,6 +9,12 @@
   color: var(--cor-branco);
   margin: -130px 0 3rem 0;
 }
+.icons i {
+  font-size: 3rem;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px 10rem 2rem 10rem;
+}
 .beneficios {
   display: flex;
   align-items: center;
