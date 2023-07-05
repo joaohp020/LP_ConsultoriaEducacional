@@ -1,0 +1,29 @@
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--cor-cinza);
+}
+.contato h2 {
+    color: var(--cor-roxo-900);
+    margin: 0 0 5rem 0;
+}
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--cor-branco);
+    height: 10rem;
+    
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(19, 70, 255, 0.438);
+}
+.redes i {
+    font-size: 2rem;
+}
+.redes p {
+    margin: 8px 10px;
+}

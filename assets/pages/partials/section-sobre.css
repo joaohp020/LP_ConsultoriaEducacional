@@ -1,45 +1,93 @@
 .sobre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: var(--cor-cinza);
+}
+.sobre h2 {
+  color: var(--cor-roxo-900);
+}
+.left-sobre {
+  background-color: var(--cor-branco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40rem;
+  height: 30rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(19, 70, 255, 0.438);
+  margin: 10rem 8rem;
+}
+.left-sobre span {
+  color: var(--cor-roxo-600);
+  font-weight: 600;
+}
+.left-sobre p {
+  padding: 15px 5rem;
+}
+.rigth-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50vw;
+}
+.foto-diretora {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.foto-diretora img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  margin: 1.5em 0;
+  box-shadow: 0px 8px 40px rgba(19, 70, 255, 0.715);
+  /* box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.868); */
+}
+.foto-diretora h3 {
+  font-weight: 800;
+}
+.diretora {
+  color: var(--cor-roxo-900);
+  font-weight: 700;
+}
+
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+  .sobre {
     flex-direction: column;
+  }
+  .sobre h1 {
+    font-size: 1.3rem;
+    padding: 8px 15px;
     overflow: hidden;
   }
-  .sobre h2 {
-    color: var(--cor-branco);
+  .left-sobre {
+    width: 20rem;
+    height: 20rem;
+    margin: 5rem 0 25px 0px;
   }
-  .beneficios {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* margin: 12rem 0; */
+  .left-sobre p {
+    padding: 10px 20px;
   }
-  .preco, .flexibilidade, .certificado {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--cor-branco);
-    width: 100%;
-    max-width: 20rem;
-    height: 10rem;
-    box-shadow: 0 0 0.8rem var(--cor-amarela);
-    border-radius: 15px;
-    padding: 20px 20px;
-    margin: 10px 20px;
+  .rigth-sobre {
+    margin: 0 0 5rem 0;
   }
-  .preco p,
-  .certificado p,
-  .flexibilidade p {
-    font-size: 0.9rem;
+  .foto-diretora img {
+    margin: 2em 0;
   }
-  
-  /* Responsivo */
-  @media screen and (max-width: 1000px) {
-    .sobre h1 {
-      font-size: 1.3rem;
-      padding: 8px 15px;
-      overflow: hidden;
-    }
+  .foto-diretora h3 {
+    font-weight: 800;
+    margin: 0.8rem 0 0.8rem 2.5rem;
+    width: 80vw;
   }
-  
+}

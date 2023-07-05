@@ -1,8 +1,9 @@
 nav {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #250842;
+  background-color: var(--cor-roxo-900);
   padding: 5px 60px;
   top: 0;
   left: 0;
@@ -42,6 +43,7 @@ nav .opcoes a.destaque button:hover {
 @media screen and (max-width: 1000px) {
   nav {
     padding: 15px 20px;
+    position: fixed;
   }
   nav img {
     width: 70px;

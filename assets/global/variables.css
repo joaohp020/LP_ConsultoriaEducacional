@@ -1,10 +1,11 @@
 :root {
-    --cor-roxo-transparente: #7f11fd1b;
+    --cor-roxo-transparente: #0e2399;
     --cor-roxo-400: #8011fd;
     --cor-roxo-600: #3e0f6d;
-    --cor-roxo-900: #250842;
-    --cor-verde: #3dc844;
+    --cor-roxo-900: #0e2399;
+    --cor-verde: #3dc844;       
     --cor-amarela: #FFD700;
     --cor-azul-claro: #6ECFF6;
     --cor-branco: #ffffff;
+    --cor-cinza: #ffffffee;
 }

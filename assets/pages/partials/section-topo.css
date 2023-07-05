@@ -7,21 +7,15 @@
 }
 .topo h1 {
   color: var(--cor-branco);
+  font-size: 2rem;
   margin: -130px 0 3rem 0;
-}
-.icons i {
-  font-size: 3rem;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 15px 10rem 2rem 10rem;
 }
 .beneficios {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin: 12rem 0; */
 }
-.preco, .flexibilidade, .certificado {
+.preco {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,23 +23,71 @@
   color: var(--cor-branco);
   width: 100%;
   max-width: 20rem;
-  height: 10rem;
+  height: 13rem;
   box-shadow: 0 0 0.8rem var(--cor-amarela);
   border-radius: 15px;
-  padding: 20px 20px;
+  padding: 15px 28px 32px;
+  margin: 7px 20px;
+}
+.flexibilidade {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 20rem;
+  height: 13rem;
+  box-shadow: 0 0 0.8rem var(--cor-amarela);
+  border-radius: 15px;
+  padding: 25px 25px 60px;
+  margin: 10px 20px;
+}
+.certificado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 20rem;
+  height: 13rem;
+  box-shadow: 0 0 0.8rem var(--cor-amarela);
+  border-radius: 15px;
+  padding: 25px 25px 60px;
   margin: 10px 20px;
 }
 .preco p,
 .certificado p,
 .flexibilidade p {
   font-size: 0.9rem;
+  margin: 5px 0;
+}
+.preco i,
+.certificado i,
+.flexibilidade i {
+  font-size: 3rem;
+  margin: 15px 0 10px 0;
 }
 
 /* Responsivo */
 @media screen and (max-width: 1000px) {
+  .topo {
+    z-index: 2;
+  }
   .topo h1 {
     font-size: 1.3rem;
     padding: 8px 15px;
     overflow: hidden;
+    display: flex;
+    margin: 10rem 0 0 0;
   }
+  .beneficios {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+  .flexibilidade {
+    margin: 3rem 0;
+  }
+
 }
