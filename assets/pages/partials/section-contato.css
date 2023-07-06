@@ -1,29 +1,53 @@
 .contato {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-    background-color: var(--cor-cinza);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--cor-cinza);
 }
 .contato h2 {
-    color: var(--cor-roxo-900);
-    margin: 0 0 5rem 0;
+  color: var(--cor-roxo-900);
+  margin: 0 0 5rem 0;
 }
 .redes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--cor-branco);
-    height: 10rem;
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--cor-branco);
+  height: 10rem;
+
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(19, 70, 255, 0.438);
+}
+.contato i {
+  font-size: 2rem;
+}
+.contato p {
+  margin: 8px 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contato h2 {
+    margin: 2.5rem 1rem;
+  }
+  .contato p {
+    margin: 5px 0;
+  }
+  .contato i {
+    font-size: 1.3rem;
+  }
+  .email {
+    border: 2px solid var(--cor-roxo-900);
     border-radius: 10px;
+    padding: 5px;
     box-shadow: 0px 4px 20px rgba(19, 70, 255, 0.438);
-}
-.redes i {
-    font-size: 2rem;
-}
-.redes p {
-    margin: 8px 10px;
+    margin: 1rem 0;
+  }
+  .redes {
+    margin: 0 1rem 3rem;
+    padding: 15px 15px;
+    height: 15rem;
+  }
 }
