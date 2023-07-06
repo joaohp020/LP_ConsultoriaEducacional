@@ -11,19 +11,40 @@
   font-weight: 700;
 }
 .alunos {
-    width: 100%;
-    min-height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 8rem 0;
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 8rem 0;
 }
 .alunos img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-size: cover;
-    box-shadow: 0px 4px 20px rgba(223, 230, 255, 0.532);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: 0px 4px 20px rgba(223, 230, 255, 0.532);
 }
 
-
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+  .feedback {
+    flex-direction: column;
+  }
+  .feedback h2 {
+    margin: 7rem 0 0 0;
+  }
+  .alunos {
+    flex-direction: column;
+  }
+  .alunos img {
+    width: 150px;
+    height: 150px;
+  }
+  .um {
+    margin: 0 0 3rem 0;    
+  }
+  .tres {
+    margin: 3rem 0 3rem 0;
+  }
+}
