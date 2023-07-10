@@ -10,7 +10,11 @@
   color: var(--cor-roxo-900);
   margin: 0 0 5rem 0;
 }
-.redes {
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.horario {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,16 +31,46 @@
 .contato p {
   margin: 8px 10px;
 }
+.redes {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+.insta, .email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--cor-roxo-900);
+  border-radius: 10px;
+  height: 3rem;
+  width: 100%;
+  max-width: 23rem;
+  margin: 1rem 0;
+}
+.insta:hover,
+.email:hover {
+  box-shadow: 0px 4px 20px rgba(19, 70, 255, 0.652);
+}
+.email i {
+  margin: 0 0 0 10px;
+}
+.email p {
+  margin: 0 10px 0 5px;
+}
 
 @media screen and (max-width: 1000px) {
   .contato h2 {
-    margin: 2.5rem 1rem;
+    margin: 2.5rem 0rem;
+    font-size: 1.2rem;
   }
   .contato p {
     margin: 5px 0;
   }
   .contato i {
     font-size: 1.3rem;
+  }
+  .content {
+    flex-direction: column;
   }
   .email {
     border: 2px solid var(--cor-roxo-900);
@@ -45,9 +79,10 @@
     box-shadow: 0px 4px 20px rgba(19, 70, 255, 0.438);
     margin: 1rem 0;
   }
-  .redes {
-    margin: 0 1rem 3rem;
-    padding: 15px 15px;
+  .horario {
+    margin: 1rem 1.5rem;
+    padding: 15px 10px;
     height: 15rem;
+    max-width: 21rem;
   }
 }
